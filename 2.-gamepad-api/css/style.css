@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background-color: #CCC;
+}
+
+#gamepads-page {
+    margin: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.pressed {
+    background-color: green;
+    color: white;
+}
+
+.gamepad {
+    padding: 10px;
+    margin: 15px;
+    border: 1px solid black;
+}
+
+.gamepad-section{
+    width: 800px;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 20px 10px;
+    border: 1px solid black;
+}
+
+.gamepad-button, 
+.gamepad-axes, 
+.gamepad-actuator {
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.gamepad-axes {
+    color: #CCC;
+    line-height: 25px;
+}
+
+.gamepad-axes:nth-child(1),
+.gamepad-axes:nth-child(2) {
+    background-color: rgb(0, 30, 128);
+}
+
+.gamepad-axes:nth-child(3),
+.gamepad-axes:nth-child(4) {
+    background-color: rgb(128, 0, 0);
+}
+
+.gamepad-axes .gamepad-axes-text {
+    line-height: 25px;
+}
+
+.gamepad-actuator:hover {
+    background-color: #AAA;
+}
+
+.gamepad-actuator:active {
+    background-color: #555;
+    color: #CCC
+}
+
+.gamepad-axes {
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    border: 1px solid black;
+}
